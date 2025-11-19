@@ -47,7 +47,7 @@ export default function SplitPDF() {
       }
 
       const zipBlob = await zip.generateAsync({ type: "blob" });
-      saveAs(zipBlob, `${file.name.replace(".pdf", "")}-split.zip`);
+      saveAs(zipBlob, `compressed-split.zip`);
     } catch (err) {
       console.error("Split error:", err);
     }
