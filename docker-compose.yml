@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   nextapp:
     container_name: next_production
@@ -16,7 +14,7 @@ services:
     image: nginx:1.25-alpine
     container_name: next_nginx
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - nextapp
     volumes:
