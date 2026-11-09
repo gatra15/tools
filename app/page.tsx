@@ -8,6 +8,22 @@ export default function HomePage() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
         <Link
+          href="/tools/edit-page"
+          className="p-6 rounded-xl shadow bg-white border hover:bg-green-50 transition"
+        >
+          <h2 className="text-xl font-semibold text-green-800">Edit Page PDF</h2>
+          <p className="text-gray-600">Edit Your unused PDF Page</p>
+        </Link>
+
+        <Link
+          href="/tools/compress-pdf"
+          className="p-6 rounded-xl shadow bg-white border hover:bg-green-50 transition"
+        >
+          <h2 className="text-xl font-semibold text-green-800">Compress PDF</h2>
+          <p className="text-gray-600">Compress Your PDF File to smaller size</p>
+        </Link>
+
+        <Link
           href="/tools/convert"
           className="p-6 rounded-xl shadow bg-white border hover:bg-green-50 transition"
         >
